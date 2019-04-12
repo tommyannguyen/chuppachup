@@ -1,6 +1,5 @@
 {
-  "name": "ncaApp",
+  "name": "New Ionic App",
   "integrations": {},
-  "type": "angular",
-  "id": "4456fd4c"
+  "type": "angular"
 }

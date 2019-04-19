@@ -62,3 +62,27 @@ All app preview screenshots were taken by running `ionic serve --lab` on a retin
 ### iOS
 
 1. Run `ionic cordova run ios --prod`
+
+### Build release 
+https://ionicframework.com/docs/cli/commands/cordova-build
+ionic cordova build android
+ionic cordova build android --buildConfig=build.json
+ionic cordova build android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true
+ionic cordova build android --prod --release -- -- --keystore=nca.jks --alias=nca
+ionic cordova build android --prod --release -- -- --minSdkVersion=21
+ionic cordova build android --prod --release -- -- --versionCode=55
+ionic cordova build android --prod --release --buildConfig=build.json
+ionic cordova build ios
+ionic cordova build ios --buildConfig=build.json
+ionic cordova build ios --prod --release
+ionic cordova build ios --prod --release -- --developmentTeam="ABCD" --codeSignIdentity="iPhone Developer" --packageType="app-store"
+ionic cordova build ios --prod --release --buildConfig=build.json
+
+nca.jks
+key:nca
+password:12345678
+
+### Release
+ionic cordova build android --prod --release
+### Debug
+ionic serve

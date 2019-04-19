@@ -16,22 +16,32 @@ import { UserData } from './providers/user-data';
 export class AppComponent implements OnInit {
   appPages = [
     {
-      title: 'Schedule',
-      url: '/app/tabs/schedule',
+      title: 'Daily Sales',
+      url: '/app/tabs/about',
       icon: 'calendar'
     },
     {
-      title: 'Speakers',
+      title: 'Bookings Summary',
       url: '/app/tabs/speakers',
       icon: 'contacts'
     },
     {
-      title: 'Map',
+      title: 'Pricing Analysis',
       url: '/app/tabs/map',
       icon: 'map'
     },
     {
-      title: 'About',
+      title: 'Interative Site Calendar',
+      url: '/app/tabs/about',
+      icon: 'information-circle'
+    },
+    {
+      title: 'Channel Analysis',
+      url: '/app/tabs/about',
+      icon: 'information-circle'
+    },
+    {
+      title: 'Forcast',
       url: '/app/tabs/about',
       icon: 'information-circle'
     }
@@ -52,8 +62,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.checkLoginStatus();
-    this.listenForLoginEvents();
+    //this.checkLoginStatus();
+    //this.listenForLoginEvents();
   }
 
   initializeApp() {

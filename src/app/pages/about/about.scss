@@ -22,3 +22,25 @@
 .ios .about-info {
   text-align: center;
 }
+
+.chart-wrapper {
+  width: 100%;
+  display: inline-block;
+  margin: 1em 2em;
+  margin-right: 20px;
+}
+
+
+canvas  {
+  height: 500px !important;
+  width: 100% !important;
+}
+.powerbi-em
+{
+  width: 1000px;
+  height: 800PX;
+}
+.scroll 
+{
+  overflow-x: scroll;
+}

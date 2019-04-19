@@ -108,6 +108,6 @@ export class AppComponent implements OnInit {
   openTutorial() {
     this.menu.enable(false);
     this.storage.set('ion_did_tutorial', false);
-    this.router.navigateByUrl('/tutorial');
+    this.router.navigateByUrl('/about');
   }
 }

@@ -29,8 +29,12 @@ const routes: Routes = [
     loadChildren: './pages/tabs-page/tabs-page.module#TabsModule'
   },
   {
-    path: 'tutorial',
-    loadChildren: './pages/tutorial/tutorial.module#TutorialModule',
+    path: 'about',
+    loadChildren: './pages/tabs-page/tabs-page.module#TabsModule'
+  },
+  {
+    path: 'about',
+    loadChildren: './pages/about/about.module#AboutModule',
     canLoad: [CheckTutorial]
   }
 ];

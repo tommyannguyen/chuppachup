@@ -1,14 +1,13 @@
 {
-  "name": "ionic-conference-app",
+  "name": "nxify",
   "version": "0.0.0",
-  "description": "Ionic Conference App",
-  "license": "Apache-2.0",
+  "description": "NXIFY",
+  "license": "NXIFY",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint"
+    "start": "ionic serve",
+    "build:android": "ionic cordova build android",
+    "build:ios": "ionic cordova build ios",
+    "test": "ng test"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,7 @@
     "@angular/common": "7.2.1",
     "@angular/core": "7.2.1",
     "@angular/forms": "7.2.1",
-    "@angular/http": "~7.2.1",
+    "@angular/http": "7.2.1",
     "@angular/platform-browser": "7.2.1",
     "@angular/platform-browser-dynamic": "7.2.1",
     "@angular/pwa": "0.11.0",

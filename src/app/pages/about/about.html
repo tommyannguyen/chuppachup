@@ -13,6 +13,18 @@
 </ion-header>
 
 <ion-content padding scrollX=true>
+  <section class="powerbi-em" *ngIf="reportInfo">
+    <!-- <p>
+          URL: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html#
+        </p>
+        <p>
+          Info : {{strData}}
+        </p> -->
+    <ngx-powerbi-component [type]="reportInfo.type" [id]="reportInfo.id" [embedUrl]="reportInfo.embedUrl"
+      tokenType="Embed" [accessToken]="reportInfo.embedToken.token" on-embedded="onEmbedded($event)">
+    </ngx-powerbi-component>
+  </section>
+
   <section class="chart-wrapper">
     <canvas #barChart></canvas>
   </section>
@@ -27,20 +39,4 @@
     <canvas #lineChart></canvas>
   </section>
 
-  <section class="powerbi-em" *ngIf="reportInfo">
-    <!-- <p>
-      URL: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html#
-    </p>
-    <p>
-      Info : {{strData}}
-    </p> -->
-    <ngx-powerbi-component 
-      [type]="reportInfo.type" 
-      [id]="reportInfo.id"
-      [embedUrl]="reportInfo.embedUrl"
-      tokenType="Embed" 
-      [accessToken]="reportInfo.embedToken.token"
-      on-embedded="onEmbedded($event)">
-    </ngx-powerbi-component>
-  </section>
 </ion-content>

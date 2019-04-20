@@ -38,12 +38,12 @@ export class AppComponent implements OnInit {
     {
       title: 'Channel Analysis',
       url: '/app/tabs/about',
-      icon: 'information-circle'
+      icon: 'map'
     },
     {
       title: 'Forcast',
       url: '/app/tabs/about',
-      icon: 'information-circle'
+      icon: 'contacts'
     }
   ];
   loggedIn = false;

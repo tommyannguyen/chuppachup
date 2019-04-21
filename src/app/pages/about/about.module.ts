@@ -8,7 +8,6 @@ import { PopoverPage } from '../about-popover/about-popover';
 import { AboutPageRoutingModule } from './about-routing.module';
 import { NgxPowerBiModule } from 'ngx-powerbi';
 import { PowerBiService } from '../../providers/powerbi.service';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -21,7 +20,7 @@ import { PowerBiService } from '../../providers/powerbi.service';
   entryComponents: [PopoverPage],
   bootstrap: [AboutPage],
   providers: [
-    PowerBiService
+    PowerBiService,
   ]
 })
 export class AboutModule {

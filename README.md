@@ -58,6 +58,7 @@ All app preview screenshots were taken by running `ionic serve --lab` on a retin
 ### Android
 
 1. Run `ionic cordova run android --prod`
+2. Run `ionic cordova run android --device`
 
 ### iOS
 

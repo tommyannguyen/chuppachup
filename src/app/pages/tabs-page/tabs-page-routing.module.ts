@@ -53,7 +53,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../about/about.module#AboutModule'
+            loadChildren: '../map/map.module#MapModule'
           }
         ]
       },

@@ -36,10 +36,24 @@ canvas  {
 }
 .powerbi-em
 {
-  width: 1000px;
-  height: 800PX;
+  height: 100%;
 }
-.scroll 
+// .scroll 
+// {
+//   overflow-x: scroll;
+// }
+.padding
 {
-  overflow-x: scroll;
+  -webkit-padding-start: var(--ion-padding, 0px);
+    padding-inline-start: var(--ion-padding, 0px);
+    -webkit-padding-end: var(--ion-padding, 0px);
+    padding-inline-end: var(--ion-padding, 0px);
+    --padding-start: var(--ion-padding, 0px);
+    --padding-end: var(--ion-padding, 0px);
+    --padding-top: var(--ion-padding, 0px);
+    --padding-bottom: var(--ion-padding, 0px);
+    padding-left: var(--ion-padding, 0px);
+    padding-right: var(--ion-padding, 0px);
+    padding-top: var(--ion-padding, 0px);
+    padding-bottom: var(--ion-padding, 0px);
 }

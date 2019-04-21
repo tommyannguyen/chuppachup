@@ -17,12 +17,12 @@ export class AppComponent implements OnInit {
   appPages = [
     {
       title: 'Daily Sales',
-      url: '/app/tabs/about',
+      url: '/about',
       icon: 'calendar'
     },
     {
       title: 'Bookings Summary',
-      url: '/app/tabs/speakers',
+      url: '/app/tabs/map',
       icon: 'contacts'
     },
     {
@@ -32,17 +32,17 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Interative Site Calendar',
-      url: '/app/tabs/about',
+      url: '/app/tabs/map',
       icon: 'information-circle'
     },
     {
       title: 'Channel Analysis',
-      url: '/app/tabs/about',
+      url: '/app/tabs/map',
       icon: 'map'
     },
     {
       title: 'Forcast',
-      url: '/app/tabs/about',
+      url: '/app/tabs/map',
       icon: 'contacts'
     }
   ];
@@ -86,6 +86,9 @@ export class AppComponent implements OnInit {
   }
 
   listenForLoginEvents() {
+    this.events.subscribe('page:about', () => {
+      
+    });
     this.events.subscribe('user:login', () => {
       this.updateLoggedInStatus(true);
     });
